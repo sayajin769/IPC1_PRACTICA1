@@ -12,11 +12,14 @@ import java.util.Scanner;
  * @author USUARIO
  */
 public class MENU_201900122 {
+    Operador_de_palabras Mi_Operador = new Operador_de_palabras();
+    
     public boolean MENU_PRINCIPAL(){
         String palabra;
         boolean salir = false;
         Scanner teclado = new Scanner(System.in);
-        while (!salir){       
+        while (!salir){      
+            System.out.println("\n\n\n\n\n\n\n\n\n\n\n");
             System.out.println("############## MENU PRINCIPAL ##############");
             System.out.println("## 1) MENU NUEVA PARTIDA ##");
             System.out.println("## 2) HISTORIAL DE PARTIDAS ##");
@@ -76,14 +79,13 @@ public class MENU_201900122 {
         boolean regresar =true;
         Scanner teclado = new Scanner (System.in);
         while (regresar=true){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n");
         System.out.println("############## NUEVA PARTIDA ##############");
         System.out.println("## 1) MENU PALABRAS ##");
         System.out.println("## 2) JUGAR ##");
         System.out.println("## 3) TERMINAR PARTIDA ##");
         System.out.print("escriba el numero de opcion a la que desea ingresar: \n");
         palabra = teclado.nextLine();
-        System.out.println(palabra);        
-  
      switch(palabra){
             case "1":
                 MENU_PALABRAS();
@@ -110,6 +112,7 @@ public class MENU_201900122 {
         boolean salir =true;
         Scanner teclado = new Scanner (System.in);
         while (salir){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n");
         System.out.println("############## MENU PALABRAS ##############");
         System.out.println("## 1) insertar ##");
         System.out.println("## 2) insertar todas ##");
@@ -117,10 +120,9 @@ public class MENU_201900122 {
         System.out.println("## 4) salir ##");
         System.out.print("escriba el n[umero de opcion a la que desea ingresar: \n");
         palabra = teclado.nextLine();
-        System.out.println(palabra);
         switch (palabra){
             case "1":
-                INSERTAR();
+                Mi_Operador.insertar();
                 break;
             case "2":
                 INSERTAR_TODAS();
@@ -137,7 +139,6 @@ public class MENU_201900122 {
         return true; 
     }
    public boolean INSERTAR(){
-       
        return true;
    }
    public boolean INSERTAR_TODAS(){
